@@ -1,10 +1,93 @@
 <html>
-<head>
-	<title>{{ enroll_no }} : {{ name }}</title>
-</head>
+<!-- <head> -->
+	<!-- <title>{{ enroll_no }} : {{ name }}</title> -->
+<!-- </head> -->
 <body>
-	Enrollment no. : {{ enroll_no }}<br>
-	Name : {{ name }}
-	<img src="{{ img }}" />
+	<table width=800 height=240 cellpadding=0 border=1>
+
+		<tr height=240>
+			<td width=240>
+				<img src="{{ img }}" alt="{{ enroll_no }}" width={{ width }} height={{ height }}>
+			</td>
+			<td>
+				<table width=560 height=240 cellpadding=0>
+					<tr height=60>
+						<td>
+							<table width=560 height=60  border=1>
+								<tr>
+									<td>Enrollment No.: {{ enroll_no }}</td>
+									<td>Branch: {{ class }}
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr height=60>
+						<td>
+							<table height=60 border=1 width=560>
+								<tr>
+									<td>Name: {{ name }}</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr height=60>
+						<td>
+							<table height=60 border=1 width=560>
+								<tr>
+									<td>Email: {{ email }}</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr height=60>
+						<td>
+							<table height=60 border=1 width=560>
+								<tr>
+									<td>Room No: {{ room_no }}</td>
+									<td>Mobile No: {{ mobile_no }}</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr height=60>
+						<td>
+							<table height=60 border=1 width=560>
+								<tr>
+									<td>Register Entry: {{ reg_entry }}</td>
+									<td>Mess Registered: {{ mess_reg }}</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr height=120>
+						<td>
+							<table height=60 border=1 width=560>
+								<tr height=60>
+									<td>Fan: {{ fan }}</td>
+									<td>Tube-Light: {{ tube_light }}</td>
+									<td>Lan Wire: {{ lan }}</td>
+								</tr>
+								<tr height=60>
+									<td>Study-Table: {{ study_table }}</td>
+									<td>Tea-Table: {{ tea_table }}</td>
+									<td>Bed: {{ hard_bed }}</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr height="120">
+						<td>
+							<table height=120 border=1 width=560>
+								<tr>
+									<td>Remarks: {{ remark }}</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
 </body>
 </html>

@@ -100,7 +100,7 @@ class MainPanel(wx.Panel):
         db = MySQLdb.connect(host="localhost", # your host, usually localhost
                              user="user_name", # your username
                              passwd="db_password", # your password
-                             db="db)name") # name of the data base
+                             db="db_name") # name of the data base
         cur = db.cursor()
         query = "SELECT * FROM main WHERE enroll_no = "+str(enroll_no)
         cur.execute(query)
